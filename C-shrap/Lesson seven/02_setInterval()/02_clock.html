@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Clock</h1>
+
+    <h3 id="clock"></h3>
+
+    <script>
+
+        setInterval(timer, 1000);
+
+        function timer(){
+            // create an instance of object Date
+            let d = new Date();
+            // get only the time from the current time + date
+            d = d.toLocaleTimeString();
+            // update every second the data in the HTML element `clock`
+            document.getElementById('clock').innerHTML = d;
+        }
+
+    </script>
+
+</body>
+</html>

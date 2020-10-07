@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+    <h1>Set intervals:</h1>
+
+    <button onclick="stop()">Stop</button>
+
+    <script>
+
+        // setInterval(function, milliseconds)
+        
+        let printData = setInterval(function(){
+            console.log("Hello");
+        }, 3000);
+        
+        function stop(){
+            // stop the setInterval()
+            clearInterval(printData);
+        }
+
+    </script>
+</body>
+</html>

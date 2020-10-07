@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body onload="getDate()">
+    
+    <h1>Date object</h1>
+
+    <h3 id="d1"></h3>
+    <h3 id="d2"></h3>
+
+    <script>
+
+        function getDate(){
+            let d1 = document.getElementById('d1');
+            d1.innerHTML = new Date(); // create an instance of object Date.
+
+            let d2 = document.getElementById('d2');
+            // new Date(year, month, day, hours, minutes, seconds)
+            d2.innerHTML = new Date(3000);
+        }
+
+    </script>
+</body>
+</html>

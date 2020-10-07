@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body onload="useGetTime()">
+    
+    <h1>getTime()</h1>
+
+    <h2 id="h2">Current time: </h2>
+
+    <h3 id="d1">getTime() - </h3>
+    <h3 id="d2">getHours() - </h3>
+    <h3 id="d3">getMinutes() - </h3>
+    <h3 id="d4">getSeconds() - </h3>
+    <h3 id="d5">getMilliseconds() - </h3>
+    <script>
+
+        function useGetTime(){
+            // current date:
+            let d = new Date();
+
+            document.getElementById('h2').innerHTML = new Date();
+
+            // returns the number of millieconds from 1970/01/01
+            document.getElementById('d1').innerHTML += d.getTime();
+            document.getElementById('d2').innerHTML += d.getHours();
+            document.getElementById('d3').innerHTML += d.getMinutes();
+            document.getElementById('d4').innerHTML += d.getSeconds();
+            document.getElementById('d5').innerHTML += d.getMilliseconds();
+
+        }
+
+    </script>
+</body>
+</html>

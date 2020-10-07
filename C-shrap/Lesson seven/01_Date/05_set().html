@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body onload="changeDate()">
+
+    <h3 id="d1"></h3>
+    <h3 id="d2"></h3>
+
+    <script>
+
+        function changeDate(){
+            let d = new Date();
+
+            // set() - change the values
+            d.setHours(15);
+            d.setMinutes(45);
+            d.setSeconds(17);
+            d.setMilliseconds(1);
+
+            document.getElementById('d1').innerHTML = d.toLocaleDateString(); // 1.9.2020
+            document.getElementById('d2').innerHTML = d.toLocaleTimeString(); // 15:45:17
+
+
+        }
+
+
+    </script>
+</body>
+</html>

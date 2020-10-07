@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body onload="useGetDate()">
+    
+    <h1>Date object</h1>
+
+    <h3 id="d1"></h3>
+    <h3 id="d2"></h3>
+
+    <script>
+
+        function useGetDate(){
+            let d = new Date(); 
+            
+            let get = d.getDate(); // 1
+            document.getElementById('d1').innerHTML = get;
+
+            d = new Date("August 23, 2020 09:21:41");
+            get = d.getDate();
+            document.getElementById('d2').innerHTML = get;
+
+        }
+
+    </script>
+</body>
+</html>

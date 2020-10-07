@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Timer</h1>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <div id="timer"></div>
+
+    <script>
+
+        var d = new Date(); // current date + time
+        var interval; // undefined for now
+
+        function start(){
+            d.setHours(0);
+            d.setMinutes(0);
+            d.setSeconds(0);
+            d.setMilliseconds(0);
+
+            interval = setInterval(setTime, 1000);
+        }
+
+        function stop(){
+            clearInterval(interval);
+        }
+
+        function setTime(){
+            d.setSeconds(d.getSeconds() + 1);
+            document.getElementById('timer').innerHTML =
+            `<h3>${d.getHours()}/${d.getMinutes()}/${d.getSeconds()}</h3>`
+        }
+
+    </script>
+</body>
+</html>

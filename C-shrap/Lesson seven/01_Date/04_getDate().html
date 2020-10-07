@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body onload="useGet()">
+    <h1>getDate()</h1>
+
+    <h2 id="h2">Current date + time: </h2>
+
+    <h3 id="d1">getFullYear() - </h3>
+    <h3 id="d2">getMonth() - </h3>
+
+
+    <script>
+
+        function useGet(){
+            let d = new Date();
+
+            document.getElementById('h2').innerHTML += d;
+            document.getElementById('d1').innerHTML += d.getFullYear();
+            // getMonth() - is an array, that starts counting from 0. 
+            document.getElementById('d2').innerHTML += d.getMonth() + 1;
+        }
+
+
+
+
+    </script>
+</body>
+</html>
