@@ -16,8 +16,7 @@ namespace ConsoleApp1
             }
             Console.WriteLine();
 
-            Console.WriteLine("Enter username:");
-            string userName = Console.ReadLine();
+          
         }
 
         static int[] randomArr(int arrSize)
